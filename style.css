@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 
 .nav-menu {
     display: flex;
-    gap:50%;
+    gap:50px; /*espaçamento entre os itens*/
 
 }
 
@@ -51,8 +51,8 @@ body::-webkit-scrollbar {
 
 .nav-container a{
 color: white;
-text-decoration: none;
-font-size: 16px;
+text-decoration: none; /*Tira a linha inferior*/
+font-size: 24px;
 
 
 }
@@ -63,4 +63,72 @@ font-size: 16px;
     height: 25px;
     object-fit: cover;
 
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 64, 0))
+
+} 
+
+.hero h1 {
+    font-size: 25vw;/*1/4 da teça*/
+    color: white;
+}
+
+#fanta{
+    position: absolute;/*Permite o espaçamento abauluto*/
+    width: 40%;
+    z-index: 2;
+}
+
+#laranja-cortada{
+    position: absolute; /*Aqui eu coloco qualquer lugar na tela*/
+    width: 15%; 
+    top: 10%;/*Aqui coloco a opção no vertical*/
+    left: 32%;/*Aqui coloco a opção no horizontal*/
+    z-index: 2;
+}
+#laranja{
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+    top: 55%;
+    right: 30%;
+
+}
+#folha{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 18%;
+    transform: rotate(60deg); /*Para rodar um pouco a imagem*/
+
+
+}
+#folha2{
+    position: absolute;
+    width: 12%;
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+}
+
+
+#folha3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+
+
+
+.hero img { /*Temporario*/
+    width: 50px;
 }
