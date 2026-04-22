@@ -6,8 +6,8 @@ var tl = gsap.timeline({
         trigger: '.two', //Quando a classe two aparecer começa//
         start: '0% 95%',//Aonde vai começar//
         end: '70% 50%', //Aonde que finaliza//
-        scrub: true,
-        markers: true, //Depuração//
+        scrub: 2,
+        markers: false, //Depuração//
     }
 });
 
@@ -68,8 +68,8 @@ var tl2 = gsap.timeline({
         trigger: '.three', //Quando a classe two aparecer começa//
         start: '0% 95%',//Aonde vai começar//
         end: '20% 50%', //Aonde que finaliza//
-        scrub: true,
-        markers: true, //Depuração//
+        scrub: 2,
+        markers: false, //Depuração//
     }
 });
 tl2.from(
